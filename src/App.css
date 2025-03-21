@@ -1,0 +1,375 @@
+/* App styling */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+.dashboard-header {
+  background-color: #2563eb;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.dashboard-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.last-updated {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.refresh-button {
+  background-color: white;
+  color: #2563eb;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.refresh-button:hover {
+  background-color: #f3f4f6;
+}
+
+.refresh-button:disabled {
+  background-color: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.dashboard-content {
+  display: flex;
+  flex: 1;
+  background-color: #f9fafb;
+}
+
+.dashboard-sidebar {
+  width: 300px;
+  background-color: white;
+  border-right: 1px solid #e5e7eb;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  overflow-y: auto;
+}
+
+.map-container {
+  height: 400px;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.list-container {
+  flex: 1;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.error-message {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+/* Filter panel styling */
+.filter-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.filter-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.filter-panel-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.reset-filters-button {
+  background-color: transparent;
+  color: #2563eb;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+}
+
+.reset-filters-button:hover {
+  text-decoration: underline;
+}
+
+.filter-section {
+  margin-bottom: 1.5rem;
+}
+
+.filter-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+.filter-input,
+.filter-select {
+  width: 100%;
+  padding: 0.625rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  color: #1f2937;
+  background-color: white;
+}
+
+.filter-input:focus,
+.filter-select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.filter-range {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.filter-info {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+  font-size: 0.75rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* Vacature list styling */
+.vacature-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.vacature-list-header {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.vacature-list-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.vacature-list-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.vacature-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.vacature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vacature-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.vacature-title {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.vacature-date {
+  font-size: 0.875rem;
+  color: #6b7280;
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+.vacature-card-company {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.vacature-company {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.vacature-location {
+  color: #4b5563;
+}
+
+.vacature-distance {
+  color: #6b7280;
+}
+
+.vacature-description {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin: 0.75rem 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.vacature-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+}
+
+.vacature-category {
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.category-hr {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.category-communicatie {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.category-recruitment-marketing {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.vacature-source {
+  color: #6b7280;
+}
+
+.vacature-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.vacature-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.vacature-list-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    flex-direction: column;
+  }
+  
+  .dashboard-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .dashboard-meta {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .vacature-card-header {
+    flex-direction: column;
+  }
+  
+  .vacature-date {
+    margin-left: 0;
+    margin-top: 0.25rem;
+  }
+  
+  .vacature-card-footer {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
