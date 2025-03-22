@@ -3,7 +3,7 @@ import axios from 'axios';
 import './App.css';
 
 // API URL - dit wordt bijgewerkt naar de gedeployde backend URL
-const API_URL = 'https://vacature-dashboard-backend.vercel.app/api';
+const API_URL = 'https://vacature-backend.vercel.app/api';
 
 function App() {
   // State voor vacatures en filters
