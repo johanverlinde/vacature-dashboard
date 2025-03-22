@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 
-// API URL - verander dit naar de URL van je gedeployde backend
-const API_URL = 'https://jouw-backend-url.vercel.app/api';
+// API URL - dit wordt bijgewerkt naar de gedeployde backend URL
+const API_URL = 'https://vacature-dashboard-backend.vercel.app/api';
 
 function App() {
   // State voor vacatures en filters
